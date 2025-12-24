@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mathe Taschenrechner Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🧠 Mathe-Quiz mit Taschenrechner</h1>
+
+  <div class="info">
+    <p>Zielzahl: <span id="target">0</span></p>
+    <p>Leben: <span id="lives">3</span></p>
+    <p>Punkte: <span id="points">0</span></p>
+    <p>⏱ Zeit: <span id="time">30</span>s</p>
+  </div>
+
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+
+    <div class="buttons">
+      <button onclick="add('7')">7</button>
+      <button onclick="add('8')">8</button>
+      <button onclick="add('9')">9</button>
+      <button onclick="add('/')">÷</button>
+
+      <button onclick="add('4')">4</button>
+      <button onclick="add('5')">5</button>
+      <button onclick="add('6')">6</button>
+      <button onclick="add('*')">×</button>
+
+      <button onclick="add('1')">1</button>
+      <button onclick="add('2')">2</button>
+      <button onclick="add('3')">3</button>
+      <button onclick="add('-')">−</button>
+
+      <button onclick="add('0')">0</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="checkResult()">=</button>
+      <button onclick="add('+')">+</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
